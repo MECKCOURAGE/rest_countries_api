@@ -12,12 +12,12 @@ export default function FilterByRegion() {
         const region = event.target.value;
         setSelectedRegion(region);
         if (region) {
-            navigate(`/${region.toLowerCase()}`);
+            navigate(`/rest_countries_api/${region.toLowerCase()}`);
         }
     };
 
     useEffect(() => {
-        if (location.pathname === '/') {
+        if (location.pathname === '/rest_countries_api/') {
             setSelectedRegion('');
         }
     }, [location.pathname]); // Depend on the pathname for reset

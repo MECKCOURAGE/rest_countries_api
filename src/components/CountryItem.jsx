@@ -8,7 +8,7 @@ export default function CountryItem({ data }) {
     const navigate = useNavigate()
 
     function handleHit(){
-        navigate(`/detail/${data.name}`);
+        navigate(`/rest_countries_api/detail/${data.name}`);
         ResetSearch()
 
     }

@@ -16,11 +16,11 @@ const router = createBrowserRouter([
       element: <Root />,
       errorElement: <Error />,
       children: [
-        { path: '', element: <HomePageRoot />, children: [
-          {path: '', element: <HomePageContent/>},
-          {path: ':regionName', id: 'region', element: <FilteredCountriesByRegion/>}
+        { path: '/rest_countries_api', element: <HomePageRoot />, children: [
+          {path: '/rest_countries_api', element: <HomePageContent/>},
+          {path: '/rest_countries_api/:regionName', id: 'region', element: <FilteredCountriesByRegion/>}
         ]},
-        {path: 'detail/:country', element: <CountryDetail/> }
+        {path: '/rest_countries_api/detail/:country', element: <CountryDetail/> }
       ]
   }
 ])

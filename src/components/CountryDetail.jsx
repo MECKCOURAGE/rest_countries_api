@@ -13,7 +13,7 @@ export default function CountryDetail() {
     const countryDetails = data.find(datum => datum.name.toLowerCase() === country.toLowerCase())
 
     function back(){
-        navigate('..')
+        navigate('/rest_countries_api/')
     }
 
     return (

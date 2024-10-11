@@ -7,8 +7,8 @@ export default function SearchBar() {
   const location = useLocation();
 
   function handleChange(event){
-    if (location.pathname !== "/") {
-      navigate("/");
+    if (location.pathname !== "/rest_countries_api/") {
+      navigate("/rest_countries_api/");
   }
     searchingItem(event.target.value)
   }
